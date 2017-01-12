@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nazwa:</strong>
+  <%= @pytum.nazwa %>
+</p>
+
+<p>
+  <strong>Rodzaj:</strong>
+  <%= @pytum.rodzaj %>
+</p>
+
+<p>
+  <strong>Gatunek:</strong>
+  <%= @pytum.gatunek %>
+</p>
+
+<%= link_to 'Edit', edit_pytum_path(@pytum) %> |
+<%= link_to 'Back', pyta_path %>

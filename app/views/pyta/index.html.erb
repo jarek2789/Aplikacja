@@ -1,0 +1,29 @@
+<h1>Listing pyta</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nazwa</th>
+      <th>Rodzaj</th>
+      <th>Gatunek</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pyta.each do |pytum| %>
+      <tr>
+        <td><%= pytum.nazwa %></td>
+        <td><%= pytum.rodzaj %></td>
+        <td><%= pytum.gatunek %></td>
+        <td><%= link_to 'Show', pytum %></td>
+        <td><%= link_to 'Edit', edit_pytum_path(pytum) %></td>
+        <td><%= link_to 'Destroy', pytum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pytum', new_pytum_path %>

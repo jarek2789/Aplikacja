@@ -1,0 +1,1 @@
+json.partial! "pyta/pytum", pytum: @pytum

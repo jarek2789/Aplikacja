@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Kliient:</strong>
+  <%= @wypozyczeny.Kliient %>
+</p>
+
+<p>
+  <strong>Album:</strong>
+  <%= @wypozyczeny.Album %>
+</p>
+
+<%= link_to 'Edit', edit_wypozyczeny_path(@wypozyczeny) %> |
+<%= link_to 'Back', wypozyczenies_path %>

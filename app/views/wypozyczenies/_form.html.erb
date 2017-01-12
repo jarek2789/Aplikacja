@@ -1,0 +1,25 @@
+<%= form_for(@wypozyczeny) do |f| %>
+  <% if @wypozyczeny.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@wypozyczeny.errors.count, "error") %> prohibited this wypozyczeny from being saved:</h2>
+
+      <ul>
+      <% @wypozyczeny.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Kliient %><br>
+    <%= f.text_field :Kliient %>
+  </div>
+  <div class="field">
+    <%= f.label :Album %><br>
+    <%= f.text_field :Album %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

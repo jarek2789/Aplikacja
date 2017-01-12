@@ -1,0 +1,1 @@
+json.array! @plyta, partial: 'plyta/plytum', as: :plytum

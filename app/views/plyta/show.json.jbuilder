@@ -1,0 +1,1 @@
+json.partial! "plyta/plytum", plytum: @plytum

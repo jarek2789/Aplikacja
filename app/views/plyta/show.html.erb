@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nazwa:</strong>
+  <%= @plytum.nazwa %>
+</p>
+
+<p>
+  <strong>Rodzaj:</strong>
+  <%= @plytum.rodzaj %>
+</p>
+
+<p>
+  <strong>Gatunek:</strong>
+  <%= @plytum.gatunek %>
+</p>
+
+<%= link_to 'Edit', edit_plytum_path(@plytum) %> |
+<%= link_to 'Back', plyta_path %>

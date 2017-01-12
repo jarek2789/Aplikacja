@@ -1,0 +1,2 @@
+module PlytaHelper
+end

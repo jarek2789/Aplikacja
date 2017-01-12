@@ -1,0 +1,29 @@
+<%= form_for(@plytum) do |f| %>
+  <% if @plytum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@plytum.errors.count, "error") %> prohibited this plytum from being saved:</h2>
+
+      <ul>
+      <% @plytum.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nazwa %><br>
+    <%= f.text_field :nazwa %>
+  </div>
+  <div class="field">
+    <%= f.label :rodzaj %><br>
+    <%= f.text_field :rodzaj %>
+  </div>
+  <div class="field">
+    <%= f.label :gatunek %><br>
+    <%= f.text_field :gatunek %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

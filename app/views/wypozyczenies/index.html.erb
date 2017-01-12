@@ -1,0 +1,27 @@
+<h1>Listing wypozyczenies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Kliient</th>
+      <th>Album</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @wypozyczenies.each do |wypozyczeny| %>
+      <tr>
+        <td><%= wypozyczeny.Kliient %></td>
+        <td><%= wypozyczeny.Album %></td>
+        <td><%= link_to 'Show', wypozyczeny %></td>
+        <td><%= link_to 'Edit', edit_wypozyczeny_path(wypozyczeny) %></td>
+        <td><%= link_to 'Destroy', wypozyczeny, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Wypozyczenie', new_wypozyczeny_path %>

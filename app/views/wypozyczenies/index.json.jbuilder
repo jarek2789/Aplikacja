@@ -1,0 +1,1 @@
+json.array! @wypozyczenies, partial: 'wypozyczenies/wypozyczeny', as: :wypozyczeny
